@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List! - Felipe Osorio</title>
+    <!-- CSS CUSTOM -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <article class="box">
+        <header>
+          <h1><i class="fa-regular fa-rectangle-list"></i> Todo List</h1>
+          <hr />
+        </header>
+        <main>
+          <p><i class="fa-solid fa-plus"></i> Nueva Tarea</p>
+          <div class="input-tareas">
+            <input id="input" type="text" placeholder="Ingresa Tarea" />
+            <button id="enviar" type="submit">Agregar</button>
+          </div>
+          <div class="resultados">
+            <div class="recuento">
+              <ul>
+                <li>
+                  <i class="fa-regular fa-circle"></i> Total:
+                  <span id="totalTareas">0</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check-double"></i> Realizadas:
+                  <span id="tareasListas">0</span>
+                </li>
+              </ul>
+            </div>
+            <div class="lista-tareas">
+              <div class="titulos">
+                <h3>ID</h3>
+                <h3>Tarea</h3>
+                <h3>Check</h3>
+                <h3>Eliminar</h3>
+              </div>
+              <div class="tareas">
+                <ul id="listaTareas"></ul>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <hr />
+          <p>
+            ToDO List creada por
+            <a href="https://rockketz-dev.github.io/CV-Felipe/" target="_blank"
+              >@Rockketz</a
+            >
+          </p>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Main Scripts -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0d1649e436.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
